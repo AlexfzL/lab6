@@ -32,5 +32,5 @@ function addProjectDetails(e) {
 
 function callbackFn(result) {
   console.log(result);
-  $('#project' + result.id + " .details").html(result.summary);
+  $('#project' + result.id + " .details").html("<p>" + result.title + "</p><p>" + result.date + "</p><img src=" + result.image + " class='detailsImage'>" + result.summary);
 }
